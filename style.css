@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body {
+    /* min-height: 50vh; */
+    /* min-width: 50vw; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 00px; */
+}
+
+
+:root {
+    position: relative;
+    /* height: 100vh;         */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+
+}
+:root:before {
+    content: '';
+    background-image: url(./images/UG-en-20231.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: absolute;
+    background-attachment: fixed;
+    inset: 0;
+    opacity: 0.5;
+}
+
+.page-logo {
+    width: 100%;
+    padding: 0.9em 0;
+    /* border: 2px solid red; */
+}
+
+.page-logo > img {
+    width: 15%;
+    isolation: isolate;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+form{
+    position: relative;
+    /* height: 50vh; */
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    inset: 0;
+    opacity: 0.7;
+
+}
+
+form {
+    width: 450px;
+    /* border: 2px solid red; */
+    padding: 1em 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+    isolation: isolate;
+    /* background-color: black; */
+    /* opacity: 0.2; */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5em;
+}
+.signin-input h1 {
+    isolation: isolate;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+}
+
+input {
+    isolation: isolate;
+    position: relative;
+    text-align: left;
+}
+
+.signin-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    margin-left: 50px;
+    gap: 20px;
+}
+
+label > input {
+    padding: 1.2em 0;
+    width: 85%;
+    border: none;
+    color: black;
+    border-radius: 3px;
+}
+
+label > input:focus {
+    border: none;
+    outline: none;
+    background-color: #454545;
+    color: white;
+    text-indent: 10px;
+}
+
+::placeholder {
+    /* border: 2px solid red;   */
+    position: absolute;
+    border: none;
+    left: 20px;
+    top: -15px;
+    width: 100%;
+    color: #a0a0a0;
+    font-weight: 500;
+    padding: 1.5em 0;
+    /* text-align: none;  */
+    
+}
+
+#button {
+    padding: 1.2em 0;
+    width: 85%;
+    background-color: #e50914;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.signin-input #button:hover {
+    cursor: pointer;
+    background-color: #af0009;
+    text-decoration: underline;
+}
+.help-input-guide {
+    isolation: isolate;
+    display: flex;
+    justify-content: flex-start;    
+    /* align-items: center;f */
+    /* border: 2px solid white; */
+}
+.help-input-guide a {
+    text-decoration: none;
+    color: #b3b3b3;
+    display: flex;
+}
+.help-input-guide > a {
+    display: flex;
+    gap: 6px;
+}
+.help-input-guide a:hover{
+    text-decoration: underline;
+}
+.help-input-guide input {
+    color: #b3b3b3;
+}
+
+#help {
+    margin-left: 130px;
+    font-size: 0.9rem;
+}
+
+.help-input-guide input {
+    accent-color: grey;
+    transform: scale(1.1);
+}
+
+.help-input-guide input:active {
+    accent-color: grey;
+}
+
+.help-input-guide input:focus {
+    accent-color: white;
+}
+.signup-info {
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.signup-info p {
+    color: #b3b3b3;
+}
+
+.signup-info a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signup-info a:hover {
+    text-decoration: underline  ;
+}
+
+.captch {
+    width: 350px;
+    isolation: isolate;
+    /* transform: scale(0.8); */
+    font-size: 0.9rem;
+    position: relative;
+    top: -40px;
+    color: #8a8a8a;
+    margin-bottom: 100px;
+}
+
+.captch a {
+    text-decoration: none;
+    color: #0071eb;
+}
+.captch a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute; 
+    top: 10px;
+    padding: 2em 0; 
+    width: auto;
+    margin-top: auto;
+    min-width: 100vw;
+}
+
+footer {
+    position: relative;
+    display: flex;   
+    right: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 26px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+footer a {
+    isolation: isolate;
+    color: #6c757d;
+    /* margin: 1em 0;     */
+    text-decoration: none;
+    margin-left: 50px;
+}
+footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 0.9px;
+} 
+
+footer > a {
+    display: flex;
+    margin-left: 1em;
+    margin-left: 50px;
+}
+
+footer > .line1 {
+    display: flex;
+    justify-content: space-around;
+    isolation: isolate;
+}
+footer > .line2 {
+    display: flex;
+    justify-content: space-around;
+    isolation: isolate;
+}
+    /* .qa-contact {
+        display: flex;
+        margin: 0em 7em;
+        justify-content: space-between;
+    }
+
+    .faqs-help-terms-privacy {
+        display: flex;
+        /* margin: 0em 7em; */
+        /* justify-content: space-around; */
+    /* } */
+    /* .cookie-corparate-info { */
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* margin: 0em 7em;     */
+        /* flex-wrap: wrap; */
+    /* } */ 
+
+
+@media screen and (max-width: 430px ) {
+    body {
+        background-color: black;
+        /* max-height: 50vh; */
+        width: fit-content;
+    }
+
+
+form {
+    width: 300px;
+    display: flex;
+    padding: 0;
+    margin: -1.3em;
+}
+
+    :root::before {
+        background-image: none;
+    }
+    footer a {
+        margin: 0 auto;
+    }
+
+    footer {
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;     
+        min-height: 100%;
+        position: relative;
+        top: -50px;
+    }
+
+    .help-input-guide {
+        width: auto;
+        display: flex;
+
+    }
+
+    #help {
+        text-decoration: none;
+        color: #b3b3b3;
+        position: relative;
+        left: -25px;
+    }
+
+    #help:hover {
+        text-decoration: underline;
+    }
+
+}
+
+

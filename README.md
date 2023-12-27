@@ -26,13 +26,13 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/netflix-login-clone.git
+    git clone https://osmanbay90.github.io/netflix-login-page-project/
     ```
 
 2. Navigate to the project folder:
 
     ```bash
-    cd netflix-login-clone
+    cd netflix-login-page-project
     ```
 
 3. Open the `index.html` file in your preferred web browser.
